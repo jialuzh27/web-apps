@@ -1,0 +1,13 @@
+<%
+contacts = Contact.all
+
+%>
+
+<h1> Contacts</h1>
+
+<ul>
+
+<% for contact in contacts%>
+<li><%=contacts.first_name%><%=contacts.last_name>, <%=contacts.company%> </li>
+
+</ul>

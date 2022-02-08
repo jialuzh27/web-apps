@@ -6,7 +6,22 @@ card2 ="#{number.sample}_of_#{color.sample}"
 card3 ="#{number.sample}_of_#{color.sample}"
 card4 ="#{number.sample}_of_#{color.sample}"
 card5 ="#{number.sample}_of_#{color.sample}"
+
+
+deck = []
+for numbers in number
+    for colors in colors
+        deck <<"#{numbers}_of#{colors}"
+    end
+end
+
+
+shuffled_deck =deck.shuffle
+hand=shuffle_deck[0,5]
+
 %>
+
+
 
 
 
@@ -19,6 +34,9 @@ card5 ="#{number.sample}_of_#{color.sample}"
 <img src="/images/cards/<%=card4%>.svg">
 <img src="/images/cards/<%=card5%>.svg">
 </p>
+
+<% for cards in hand %>
+<img src="/images/cards/<%=card%>.svg"
 
 
 <p>
