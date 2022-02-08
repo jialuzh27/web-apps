@@ -1,0 +1,27 @@
+<%
+color = ["clubs","diamonds","hearts","spades"]
+number = [2,3,4,5,6,7,8,9,10,"ace","jack","king","queen"]
+card1 ="#{number.sample}_of_#{color.sample}"
+card2 ="#{number.sample}_of_#{color.sample}"
+card3 ="#{number.sample}_of_#{color.sample}"
+card4 ="#{number.sample}_of_#{color.sample}"
+card5 ="#{number.sample}_of_#{color.sample}"
+%>
+
+
+
+<h1>Pick 5 cards！</h1>
+
+<p>
+<img src="/images/cards/<%=card1%>.svg">
+<img src="/images/cards/<%=card2%>.svg">
+<img src="/images/cards/<%=card3%>.svg">
+<img src="/images/cards/<%=card4%>.svg">
+<img src="/images/cards/<%=card5%>.svg">
+</p>
+
+
+<p>
+<a href="/card">Pick Again</a>
+
+</P>
